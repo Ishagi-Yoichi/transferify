@@ -1,0 +1,22 @@
+# Cursor Rules for Tailwind CSS Project
+
+## Project Context
+This is a Next.js monorepo project using Tailwind CSS v3.4.1 for styling.
+
+## Tailwind CSS
+- Use Tailwind CSS classes for styling components
+- Common patterns: className="bg-blue-500 text-white p-4 rounded-lg"
+- Use responsive prefixes: sm:, md:, lg:, xl:
+- Use hover/focus states: hover:bg-blue-600 focus:ring-2
+
+## File Structure
+- apps/user-app/ - Main user application
+- apps/merchant-app/ - Merchant application  
+- packages/ui/ - Shared UI components
+- packages/db/ - Database package with Prisma
+
+## Coding Style
+- Use TypeScript for all components
+- Use Tailwind CSS for styling (no custom CSS unless necessary)
+- Follow Next.js 14 App Router patterns
+- Use proper TypeScript types for all props and state 

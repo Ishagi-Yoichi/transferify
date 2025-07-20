@@ -1,4 +1,6 @@
 import { SidebarItem } from "../../components/SidebarItem";
+import { BackgroundBeamsWithCollision } from "../../components/background-beams-with-collison";
+
 
 export default function Layout({
   children,
@@ -6,8 +8,9 @@ export default function Layout({
   children: React.ReactNode;
 }): JSX.Element {
   return (
+    
     <div className="flex">
-        <div className="w-72 border-r border-slate-300 min-h-screen mr-4 pt-28">
+        <div className="w-88 border-r border-slate-700 min-h-screen mr-3 pt-28">
             <div>
                 <SidebarItem href={"/dashboard"} icon={<HomeIcon />} title="Home" />
                 <SidebarItem href={"/transfer"} icon={<TransferIcon />} title="Transfer" />
@@ -15,8 +18,12 @@ export default function Layout({
                 <SidebarItem href={"/p2p"} icon={<P2PIcon/>} title="P2P Transfer"/>
             </div>
         </div>
-            {children}
+        <BackgroundBeamsWithCollision>
+        {children}
+        </BackgroundBeamsWithCollision>
+            
     </div>
+   
   );
 }
 
