@@ -1,5 +1,5 @@
 import { SidebarItem } from "../../components/SidebarItem";
-import { BackgroundBeamsWithCollision } from "../../components/background-beams-with-collison";
+import { Spotlight } from "../../components/Spotlight";
 
 
 export default function Layout({
@@ -18,9 +18,14 @@ export default function Layout({
                 <SidebarItem href={"/p2p"} icon={<P2PIcon/>} title="P2P Transfer"/>
             </div>
         </div>
-        <BackgroundBeamsWithCollision>
+        
+        <div className="items-center justify-center">
         {children}
-        </BackgroundBeamsWithCollision>
+        </div>
+           
+        
+        
+        
             
     </div>
    
